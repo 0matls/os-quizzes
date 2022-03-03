@@ -1,0 +1,18 @@
+function sort_files
+mkdir output
+    switch $argv[3]
+    case n
+        for file in (find . -name "*$argv[1]" -newermt "jan 01 $argv[2]")
+            mv $file ./output
+        end
+    case o
+        for file in (find . -name "*$argv[1]" -not -newermt "jan 01 $argv[2]")
+            mv $file ./output
+        end
+    case "*"
+        echo "check your input"
+        
+    end
+end #function end
+        
+   

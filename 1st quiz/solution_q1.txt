@@ -1,0 +1,5 @@
+touch "Freud quote.txt"
+echo ""One day, in retrospect, the years of struggle will strike you as the most beautiful." S. Freud" > "Freud quote.txt"
+mkdir -p "Famous Quotes"/Freud/"Character Building"
+cd "Famous Quotes"/Freud/"Character Building"
+mv ../../../"Freud quote.txt" ./"Freud quote.txt"

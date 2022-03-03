@@ -1,0 +1,1 @@
+find ./Images -size +50k \( -iname '*png' -o -iname '*jpg' \) -type f | xargs rm
